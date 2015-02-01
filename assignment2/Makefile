@@ -1,12 +1,12 @@
-all: createpdf createdvi clean
+all: pdf dvi 
  
-createpdf:
+pdf:
 	 pdflatex article.tex
 	 bibtex article 
 	 pdflatex article.tex 
 	 pdflatex article.tex
 	 pdflatex resume.tex
-createdvi:
+dvi:
 	 latex article.tex
 	 bibtex article 
 	 latex article.tex 
