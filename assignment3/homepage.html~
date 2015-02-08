@@ -1,7 +1,9 @@
 <html>
 <head>
 <title>Homepage</title>
+<link rel="shortcut icon" href="iitklogo.jpeg" type="image/png">
 </head>
+<body background="bg1.jpeg">
 <h1 style=" color :blue " align="center">AMIT KUMAR</h1>
 <h2 style="color:grey" align="center">Second Year Undergraduate</h2>
 <h2 style="color:grey" align = "center">Department of Computer Sience</h2>
@@ -9,8 +11,6 @@
 <p>Roll no- 13094</p>
 <p>DOB:10/05/1995</p>
 <a href ="resume.pdf">My Resume</a><p></p>
-<div align="center">
 <a href="https://www.facebook.com/profile.php?id=100000926190159" >CONNECT ON FACEBOOK</a>
-</div>
 </body>
 </html>
