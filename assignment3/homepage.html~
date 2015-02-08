@@ -6,7 +6,7 @@
 <body background="bg1.jpeg">
 <h1 style=" color :blue " align="center">AMIT KUMAR</h1>
 <h2 style="color:grey" align="center">Second Year Undergraduate</h2>
-<h2 style="color:grey" align = "center">Department of Computer Sience</h2>
+<h2 style="color:grey" align = "center">Department of Computer Science</h2>
 <img src="myimage.jpeg" align="right" width="300" height="300">
 <p>Roll no- 13094</p>
 <p>DOB:10/05/1995</p>
