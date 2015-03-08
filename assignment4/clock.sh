@@ -1,6 +1,12 @@
-for k in `seq 0 1 59`
+for i in `seq 0 1 23`
+	do
+		for j in `seq 0 1 59`
 		do
-			clear
-			banner $k
-			sleep 1
+			for k in `seq 0 1 59`
+			do
+				clear
+				banner $i:$j:$k
+				sleep 1
+			done
 		done
+	done
