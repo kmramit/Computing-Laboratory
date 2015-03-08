@@ -1,4 +1,6 @@
-for i in `seq 0 1 23`
+while true
+do
+	for i in `seq 0 1 23`
 	do
 		for j in `seq 0 1 59`
 		do
@@ -10,3 +12,5 @@ for i in `seq 0 1 23`
 			done
 		done
 	done
+done
+
