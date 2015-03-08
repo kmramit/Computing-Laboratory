@@ -9,9 +9,11 @@
 	}
 	for(i=5;i<=NF;i=i+2) 
 	{
+		a[i]+=$i; 
+		b[i]+=($i*$i); 
 		if($i>max[i]) max[i]=$i; 
 		if($i<min[i]) min[i]=$i;  
-	} 
+	}  
 	if(NR == 1) min1 = sum;
 	kl+=sum;
 	kl2+=(sum*sum);
@@ -28,5 +30,13 @@ END {
 	for(i=5;i<=NF;i+=2) 
 		printf("%6d |",min[i]);
 	printf("%7d\n",min1); 
+	printf("mean   |       |"); 
+	for(i=5;i<=NF;i+=2) 
+		printf("%6.2f |",a[i]/NR); 
+	printf("%7.2f \n",kl/NR); 
+	printf("sd     |       |"); 
+	for(i=5;i<=NF;i+=2) 
+		printf("%6.2f |",sqrt((b[i]/NR)-(a[i]/NR)*(a[i]/NR)));
+	printf("%7.2f \n",sqrt((kl2/NR)-(kl/NR)*(kl/NR)));
 }  
 
