@@ -9,8 +9,8 @@
 	}
 	for(i=5;i<=NF;i=i+2) 
 	{
-		a[i]+=$i; 
-		b[i]+=($i*$i); 
+		a[i]+=$i;                                            #for the mean
+		b[i]+=($i*$i); 					     #for the standard deviation
 		if($i>max[i]) max[i]=$i; 
 		if($i<min[i]) min[i]=$i;  
 	}  
@@ -22,19 +22,19 @@
 	printf("%s |%7d\n",$0,sum);
 }   
 END { 
-	printf("max    |       |"); 
+	printf("max    |       |");          		            #printing the max
 	for(i=5;i<=NF;i+=2) 
 		printf("%6d |",max[i]);
 	printf("%7d\n",max1);
-	printf("min    |       |");
+	printf("min    |       |");				    #printing the min
 	for(i=5;i<=NF;i+=2) 
 		printf("%6d |",min[i]);
-	printf("%7d\n",min1); 
-	printf("mean   |       |"); 
+	printf("%7d\n",min1); 					   	
+	printf("mean   |       |"); 				    #printing the mean
 	for(i=5;i<=NF;i+=2) 
 		printf("%6.2f |",a[i]/NR); 
 	printf("%7.2f \n",kl/NR); 
-	printf("sd     |       |"); 
+	printf("sd     |       |"); 				    #printing the standard deviation
 	for(i=5;i<=NF;i+=2) 
 		printf("%6.2f |",sqrt((b[i]/NR)-(a[i]/NR)*(a[i]/NR)));
 	printf("%7.2f \n",sqrt((kl2/NR)-(kl/NR)*(kl/NR)));
