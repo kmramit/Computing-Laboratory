@@ -1,4 +1,4 @@
-all: createpdf createdvi clean
+all: createpdf createdvi 
  
 createpdf:
 	 pdflatex article.tex
