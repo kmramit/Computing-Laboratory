@@ -1,3 +1,8 @@
+**Assignment 6:**
+#### It basically contains ####
+#### 1. ques1.tex - to generate the plot using tikz and pgfplot. ####
+#### 2. ques2.tex - to generate the flow chart. ####
+#### 3. ques3.tex - to generate the graph using grapviz and dot2tex. ####
 **Assignment 5:**
 
 ####1.It contains a **solution1.m** which is octave script to generate a probability density function data####
