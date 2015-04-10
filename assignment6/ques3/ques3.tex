@@ -43,6 +43,20 @@
 \end{dot2tex}
 \end{tikzpicture}
 
-
+\section{Petersen's graph}
+\begin{tikzpicture}[thick,every state/.style={draw=black,very thick,fill=blue!30}]
+\begin{dot2tex}[neato,mathmode]
+  graph G {
+    node[style="state", label="" ]
+      	1 -- 2 -- 3 -- 4 -- 5 -- 1 [len = 40];
+	1 -- 6 ;
+	2 -- 7 ;
+	3 -- 8 ;
+	4 -- 9 ;
+	5 -- 10;
+	6 -- 8 -- 10 -- 7 -- 9 -- 6;
+  }
+\end{dot2tex}
+\end{tikzpicture}
 
 \end{document}
