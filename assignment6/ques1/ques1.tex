@@ -1,0 +1,30 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[latin9]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+\title{Probability Distributions}
+\author{Amit Kumar}
+
+\begin{document}
+\maketitle
+\begin{tikzpicture}
+\axis[
+  width=1.2\textwidth,
+  height=1\textwidth,
+  axis lines=center,
+  xmin        = 0,
+  xmax        = 51,
+  ymin	      = 0,
+  ymax 	      = 0.16,
+ ]
+ \addlegendentry[align=left]{binomial}
+ \addlegendentry[align=left]{gaussian}
+ \addlegendentry[align=left]{poisson}
+  \addplot[color=red,smooth,mark=none] table[y = b,x=n] from {datasets} ;
+  \addplot[color=green,smooth,mark=none] table[y = g, x=n] from {datasets} ;
+  \addplot[color=orange,smooth,mark=none] table[y = p, x=n] from {datasets} ;
+  \endaxis
+\end{tikzpicture}
+
+\end{document}
